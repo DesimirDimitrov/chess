@@ -16,7 +16,7 @@ const Home = () => (
         color="text.primary"
         gutterBottom
       >
-        Pricing
+        Play Chess Online
       </Typography>
       <Typography
         variant="h5"
@@ -42,7 +42,7 @@ const Home = () => (
         color="text.primary"
         gutterBottom
       >
-        Pricing
+        Play Chess Online
       </Typography>
       <Typography
         variant="h5"
