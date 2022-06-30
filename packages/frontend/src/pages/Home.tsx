@@ -1,8 +1,10 @@
 import { Container, Typography } from "@mui/material";
 import React from "react";
+import { testVariable } from "shared";
 
 const Home = () => (
   <div className="main">
+    <div>{testVariable}</div>
     <Container
       disableGutters
       maxWidth="sm"
