@@ -22,40 +22,42 @@ const Header = () => {
       >
         <Toolbar sx={{ flexWrap: "wrap" }}>
           <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-            <RouterLink to="/">Play chess with friends</RouterLink>
+            <Link component={RouterLink} to="/">
+              Play chess with friends
+            </Link>
           </Typography>
 
           <nav>
-            <RouterLink to="/how-to-play">
-              <Link
-                variant="button"
-                color="text.primary"
-                href="#"
-                sx={{ my: 1, mx: 1.5 }}
-              >
-                How to play
-              </Link>
-            </RouterLink>
-            <RouterLink to="/ranking">
-              <Link
-                variant="button"
-                color="text.primary"
-                href="#"
-                sx={{ my: 1, mx: 1.5 }}
-              >
-                Ranking
-              </Link>
-            </RouterLink>
-            <RouterLink to="/rules">
-              <Link
-                variant="button"
-                color="text.primary"
-                href="#"
-                sx={{ my: 1, mx: 1.5 }}
-              >
-                Chess rules
-              </Link>
-            </RouterLink>
+            <Link
+              component={RouterLink}
+              to="/"
+              variant="button"
+              color="text.primary"
+              sx={{ my: 1, mx: 1.5 }}
+            >
+              How to play
+            </Link>
+
+            <Link
+              component={RouterLink}
+              to="/ranking"
+              variant="button"
+              color="text.primary"
+              sx={{ my: 1, mx: 1.5 }}
+            >
+              Ranking
+            </Link>
+
+            <Link
+              component={RouterLink}
+              to="/rules"
+              variant="button"
+              color="text.primary"
+              href="#"
+              sx={{ my: 1, mx: 1.5 }}
+            >
+              Chess rules
+            </Link>
           </nav>
           <Button
             onClick={() => {

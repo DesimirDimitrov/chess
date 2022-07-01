@@ -20,6 +20,8 @@ const Register = () => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
+      firstName: data.get("firstName"),
+      lastName: data.get("lastName"),
       email: data.get("email"),
       password: data.get("password"),
     });
@@ -110,11 +112,9 @@ const Register = () => {
               </Button>
               <Grid container justifyContent="flex-end">
                 <Grid item>
-                  <RouterLink to="/login">
-                    <Link href="#" variant="body2">
-                      Already have an account? Sign in
-                    </Link>
-                  </RouterLink>
+                  <Link component={RouterLink} to="/login" variant="body2">
+                    Already have an account? Sign in
+                  </Link>
                 </Grid>
               </Grid>
             </Box>
