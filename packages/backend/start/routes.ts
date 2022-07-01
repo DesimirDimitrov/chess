@@ -19,7 +19,8 @@
 */
 
 import Route from '@ioc:Adonis/Core/Route'
+import { testVariable } from '@desimir/chess-shared/dist'
 
 Route.get('/', async () => {
-  return { hello: 'world' }
+  return { hello: testVariable }
 })
