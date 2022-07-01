@@ -1,6 +1,6 @@
 import { Container, Typography } from "@mui/material";
 import React from "react";
-import { testVariable } from "shared";
+import { testVariable } from "@desimir/chess-shared/dist";
 
 const Home = () => (
   <div className="main">

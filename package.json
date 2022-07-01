@@ -1,16 +1,18 @@
 {
-  "name": "chess",
+  "name": "@desimir/chess",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "npm run concurrently -- \"npm run dev --workspace=@desimir/chess-shared\" \"npm run dev --workspace=@desimir/chess-backend\" \"npm run start --workspace=@desimir/chess-frontend\"",
+    "concurrently": "concurrently -k -p \"[{name}] {time} |\" -n \"chess-shared,chess-backend,chess-frontend\" -t \"HH:mm:ss\" -c \"green.bold,yellow.bold,cyan.bold\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DesimirDimitrov/chess.git"
   },
-  "author": "",
+  "author": "Desimir Dimitrov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/DesimirDimitrov/chess/issues"
@@ -20,5 +22,8 @@
     "packages/frontend",
     "packages/backend",
     "packages/shared"
-  ]
+  ],
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
 }

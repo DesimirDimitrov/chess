@@ -1,11 +1,13 @@
 {
-  "name": "shared",
+  "name": "@desimir/chess-shared",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Desimir Dimitrov",
   "license": "ISC"
 }
