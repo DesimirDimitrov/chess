@@ -11,6 +11,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Link as RouterLink } from "react-router-dom";
 
 const theme = createTheme();
 
@@ -109,9 +110,11 @@ const Register = () => {
               </Button>
               <Grid container justifyContent="flex-end">
                 <Grid item>
-                  <Link href="#" variant="body2">
-                    Already have an account? Sign in
-                  </Link>
+                  <RouterLink to="/login">
+                    <Link href="#" variant="body2">
+                      Already have an account? Sign in
+                    </Link>
+                  </RouterLink>
                 </Grid>
               </Grid>
             </Box>
